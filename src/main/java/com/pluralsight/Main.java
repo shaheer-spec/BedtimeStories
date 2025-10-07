@@ -16,9 +16,12 @@ public class Main {
 
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
 
+            int lineNumber = 1;
+
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+                System.out.println(lineNumber + ". " + line);
+                lineNumber++;
             }
 
             reader.close();
